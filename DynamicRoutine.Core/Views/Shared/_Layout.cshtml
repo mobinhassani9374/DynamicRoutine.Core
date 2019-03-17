@@ -19,7 +19,7 @@
 </head>
 <body ng-app="myApp">
     <div ng-controller="loadingBar"></div>
-    <div>
+    <div ng-controller="myController" ng-cloak>
         @RenderBody()
     </div>
 
@@ -30,5 +30,7 @@
     <script src="~/assets/angularjs/angular.min.js"></script>
     <script src="~/assets/angularjs/loading-bar/loading-bar.js"></script>
     <script src="~/assets/angularjs/app.js"></script>
+    <script src="~/assets/angularjs/controllers/myController.js"></script>
+    <script src="~/assets/angularjs/services/myService.js"></script>
 </body>
 </html>
