@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="~/assets/styles/style.rtl.css">
     <link rel="stylesheet" href="~/assets/styles/styles.css">
     <link rel="stylesheet" href="~/assets/styles/style-overwrite.rtl.css" />
+    <link rel="stylesheet" href="~/assets/styles/design.css" />
 
     <link rel="stylesheet" href="~/assets/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
     <link rel="stylesheet" href="~/assets/fonts/pe-icon-7-stroke/css/helper.css" />
@@ -19,9 +20,21 @@
 </head>
 <body ng-app="myApp">
     <div ng-controller="loadingBar"></div>
-    <div ng-controller="myController" ng-cloak>
-        @RenderBody()
+    <header class="header">
+        <div class="header__logo">
+            پنل ادمین روتین ساز 
+        </div>
+        <a class="header__hide-sidebar">
+            <i class="fa fa-bars"></i>
+        </a>
+    </header>
+    <div class="menu">
+        
     </div>
+    <main class="main" ng-controller="myController" ng-cloak>
+        @RenderBody()
+        <p>مهدی حسنی </p>
+    </main>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -32,5 +45,6 @@
     <script src="~/assets/angularjs/app.js"></script>
     <script src="~/assets/angularjs/controllers/myController.js"></script>
     <script src="~/assets/angularjs/services/myService.js"></script>
+    <script src="~/assets/js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,65 @@
+body {
+    background: #f1f1f1 !important;
+}
+
+.header {
+    background-color: #fff !important;
+    box-shadow: 0px 0px 1px #ccc;    
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 60px;
+    width: 100%;
+    display: flex;
+}
+
+.menu {
+    background-color: #fff !important;
+    box-shadow: 0px 0px 1px #ccc;    
+    position: fixed;
+    top: 60px;
+    right: 0;
+    height:calc(100vh -  60px);    
+    width: 200px;
+    overflow-y: auto;
+    margin-right: 0px;  
+    transition: all ease-in 0.4s;  
+}
+
+.header__logo  {
+    padding: 17px 15px;
+    font-size: 18px;
+    font-family: "iranyekan" !important;
+    font-weight: 600;
+    width: 200px;
+}
+
+.header__hide-sidebar {
+    padding: 18px 26px 17px 26px;
+    font-size: 14px;
+    float: right;
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    margin-left: 15px;
+    background: #f7f9fa;
+    cursor: pointer;
+}
+
+.header__hide-sidebar:hover {
+    background: #f1f4f6;
+}
+
+body.page-small .main {
+    margin-right: 0px;
+}
+
+body.page-small  .menu {
+    margin-right: -200px;    
+}
+
+.main {
+    margin-top: 60px;
+    margin-right: 200px;
+    padding: 15px;  
+    transition: all ease-in 0.4s;
+}
