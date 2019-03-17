@@ -1,4 +1,4 @@
-﻿var app = angular.module('myApp', ['chieffancypants.loadingBar', 'toaster', 'hSweetAlert', 'ngFileUpload', 'ADM-dateTimePicker'])
+﻿var app = angular.module('myApp', ['chieffancypants.loadingBar'])
 .config(function (cfpLoadingBarProvider) {
     cfpLoadingBarProvider.includeSpinner = true;
 }).controller('loadingBar', function ($scope, $http, $timeout, cfpLoadingBar) {

@@ -11,10 +11,13 @@
     <link rel="stylesheet" href="~/assets/styles/style.rtl.css">
     <link rel="stylesheet" href="~/assets/styles/styles.css">
     <link rel="stylesheet" href="~/assets/styles/style-overwrite.rtl.css" />
+
     <link rel="stylesheet" href="~/assets/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
     <link rel="stylesheet" href="~/assets/fonts/pe-icon-7-stroke/css/helper.css" />
+
+    <link rel="stylesheet" href="~/assets/angularjs/loading-bar/loading-bar.css" />
 </head>
-<body>
+<body ng-app="myApp">
     <div ng-controller="loadingBar"></div>
     <div>
         @RenderBody()
@@ -22,5 +25,10 @@
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+
+    <script src="~/assets/angularjs/angular.min.js"></script>
+    <script src="~/assets/angularjs/loading-bar/loading-bar.js"></script>
+    <script src="~/assets/angularjs/app.js"></script>
 </body>
 </html>
