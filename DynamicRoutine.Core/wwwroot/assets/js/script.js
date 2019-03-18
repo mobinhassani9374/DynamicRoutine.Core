@@ -1,4 +1,7 @@
 $(function() {
+    
+    new WOW().init();
+
     $('.header__hide-sidebar').on('click',function(){
         if($('body').hasClass('hide-sidebar')) {
             $('body').removeClass('hide-sidebar');
