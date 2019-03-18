@@ -18,12 +18,28 @@ namespace DynamicRoutine.Core.Utility
                 Message = "عملیات با موفقیت صورت گرفت"
             };
         }
+        public static ServiceResult Okay(string message)
+        {
+            return new ServiceResult
+            {
+                IsSuccess = true,
+                Message = message
+            };
+        }
         public static ServiceResult Error()
         {
             return new ServiceResult
             {
                 IsSuccess = false,
                 Message = "در انجام عملیات خطایی صورت گرفت مجددا تلاش کنید"
+            };
+        }
+        public static ServiceResult Error(string message)
+        {
+            return new ServiceResult
+            {
+                IsSuccess = false,
+                Message = message
             };
         }
     }
