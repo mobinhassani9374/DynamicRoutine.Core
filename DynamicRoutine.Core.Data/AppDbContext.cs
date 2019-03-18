@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DynamicRoutine.Core.Data.Mapper;
@@ -13,7 +14,7 @@ namespace DynamicRoutine.Core.Data
     {
         public AppDbContext(DbContextOptions options) : base(options)
         {
-
+            this.Users.Where()
         }
 
         public DbSet<User> Users { get; set; }
