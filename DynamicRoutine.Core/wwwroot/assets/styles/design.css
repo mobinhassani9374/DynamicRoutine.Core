@@ -171,3 +171,12 @@ body.page-small  .menu {
     font-size: 14px;
 }
 
+.table-striped thead tr th , .table-striped tbody tr td {
+    text-align: center;
+}
+
+.panel-default > .panel-heading {  
+    background: #f7f9fa;
+    font-size: 15px;
+}
+
