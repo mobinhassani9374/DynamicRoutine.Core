@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DynamicRoutine.Core.Domain\DynamicRoutine.Core.Domain.csproj" />
+    <ProjectReference Include="..\DynamicRoutine.Core.Utility\DynamicRoutine.Core.Utility.csproj" />
   </ItemGroup>
 
 </Project>

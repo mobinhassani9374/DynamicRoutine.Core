@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using DynamicRoutine.Core.Data.Mapper;
 using DynamicRoutine.Core.Domain.Entities;
+using DynamicRoutine.Core.Utility;
 using Microsoft.EntityFrameworkCore;
 
 namespace DynamicRoutine.Core.Data
@@ -21,6 +23,19 @@ namespace DynamicRoutine.Core.Data
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.ApplyConfiguration(new UserMapper());
+        }
+
+        public ServiceResult Save()
+        {
+            var result = this.SaveChanges();
+            if (result > 0) return ServiceResult.Okay();
+            return ServiceResult.Error();
+        }
+        public async Task<ServiceResult> SaveAsync()
+        {
+            var result = await this.SaveChangesAsync();
+            if (result > 0) return ServiceResult.Okay();
+            return ServiceResult.Error();
         }
     }
 }

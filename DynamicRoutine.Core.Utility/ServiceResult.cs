@@ -10,7 +10,7 @@ namespace DynamicRoutine.Core.Utility
 
         public bool IsSuccess { get; set; }
 
-        public ServiceResult Okay()
+        public static ServiceResult Okay()
         {
             return new ServiceResult
             {
@@ -18,7 +18,7 @@ namespace DynamicRoutine.Core.Utility
                 Message = "عملیات با موفقیت صورت گرفت"
             };
         }
-        public ServiceResult Error()
+        public static ServiceResult Error()
         {
             return new ServiceResult
             {
