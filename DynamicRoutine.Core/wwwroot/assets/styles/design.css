@@ -161,3 +161,13 @@ body.page-small  .menu {
     border-bottom: none;  
 }
 
+.kartable-img {
+    max-height: 100px;
+}
+
+.kartable-txt {
+    margin: 15px 0;
+    font-weight: 600;
+    font-size: 14px;
+}
+
