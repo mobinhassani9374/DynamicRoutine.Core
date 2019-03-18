@@ -18,7 +18,7 @@
 
     <link rel="stylesheet" href="~/assets/angularjs/loading-bar/loading-bar.css" />
 </head>
-<body ng-app="myApp">
+<body ng-app="myApp" ng-controller="myController" ng-cloak>
     <div ng-controller="loadingBar"></div>
     <header class="header">
         <div class="header__logo">
@@ -29,11 +29,13 @@
         </a>
     </header>
     <div class="menu">
-        
+        <div class="profile">
+            <img src="~/assets/images/profile.jfif" class="profile__img" />
+            <div class="profile__name"><span class="text-success">{{name}}</span> خوش آمدی</div>
+        </div>
     </div>
-    <main class="main" ng-controller="myController" ng-cloak>
-        @RenderBody()
-        <p>مهدی حسنی </p>
+    <main class="main">
+        @RenderBody()        
     </main>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
