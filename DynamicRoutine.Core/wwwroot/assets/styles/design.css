@@ -185,9 +185,13 @@ body.page-small  .menu {
     position: relative;
     background-image: url(../images/login-bg.jpg);
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
 }
 
-.login:after {
+/* .login:after {
     content: '';
     height: 100%;
     width: 100%;
@@ -196,6 +200,47 @@ body.page-small  .menu {
     right: 0;
     background-color: #222;
     opacity: 0.6;   
+} */
+
+.login__box {
+    width: 400px;    
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 10px;
+    color: #fff !important;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width:400px) {
+    .login {
+        padding: 15px;
+    }
+    .login__box {
+        width: 100%;
+    }
+}
+
+.login__box__footer {
+    padding: 15px;
+    border-top: 1px solid #777;
+}
+
+.login__box__footer__link {
+    color: #fff !important;
+    cursor: pointer;
+    font-family: "iranyekan" !important;
+}
+
+
+
+.login__box__title {
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #777;
+    font-family: "iranyekan" !important;
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
 #loading-bar .bar {
