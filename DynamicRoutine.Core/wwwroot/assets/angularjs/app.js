@@ -1,4 +1,4 @@
-﻿var app = angular.module('myApp', ['chieffancypants.loadingBar'])
+﻿var app = angular.module('myApp', ['chieffancypants.loadingBar','toaster', 'hSweetAlert'])
 .config(function (cfpLoadingBarProvider) {
     cfpLoadingBarProvider.includeSpinner = true;
 }).controller('loadingBar', function ($scope, $http, $timeout, cfpLoadingBar) {
