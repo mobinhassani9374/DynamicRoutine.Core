@@ -9,8 +9,8 @@ body {
     top: 0;
     right: 0;
     height: 60px;
-    width: 100%;
-    display: flex;
+    width: 100%;  
+    z-index: 1000;  
 }
 
 .menu {
@@ -31,11 +31,12 @@ body {
     font-size: 18px;
     font-family: "iranyekan" !important;
     font-weight: 600;
-    width: 200px;
+    width: 200px;    
+    float: right;
 }
 
 .header__hide-sidebar {
-    padding: 18px 26px 17px 26px;
+    padding: 23px 25px 17px 26px;
     font-size: 14px;
     float: right;
     border-left: 1px solid #eaeaea;
@@ -43,9 +44,24 @@ body {
     margin-left: 15px;
     background: #f7f9fa;
     cursor: pointer;
+    
 }
 
 .header__hide-sidebar:hover {
+    background: #f1f4f6;
+}
+
+.header__link {
+    font-size: 24px;
+    padding: 13px;
+    float: left;
+}
+@media (max-width:767px) {
+    .header__link {     
+        padding: 13px 9px;   
+    }
+}
+.header__link:hover {
     background: #f1f4f6;
 }
 
@@ -60,7 +76,7 @@ body.page-small  .menu {
 .main {
     margin-top: 60px;
     margin-right: 200px;
-    padding: 15px;  
+    padding: 30px;  
     transition: all ease-in 0.4s;
 }
 
@@ -77,4 +93,69 @@ body.page-small  .menu {
     font-weight: 500;
     text-align: center;
     margin-top: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
 }
+
+.dashbord {
+    box-shadow: 0px 0px 1px #eee;
+    border:1px solid #e7d9d9;
+    background-color: #fff;
+    border-top: 2px solid #17a2b8!important;
+}
+
+.dashbord__top {
+    height: 70px;   
+    border-bottom: 1px solid #eee;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    background: #f7f9fa;
+}
+
+.dashbord__top__icon {
+    font-size: 40px;
+    color: #666;
+}
+
+.dashbord__top__txt {
+    margin-right: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #666;
+    margin-top: 5px;
+    font-family: "iranyekan" !important;
+}
+
+.dashbord__bottom {
+    padding: 15px;
+}
+
+.dashbord__bottom ul {
+    margin: 0;   
+    padding: 0;
+}
+
+.dashbord__bottom ul li {
+    margin: 0;
+    list-style-type: none;
+}
+
+.dashbord__bottom ul li .dashbord__bottom__link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px dotted #ccc;    
+    font-size: 11px;
+}
+
+.dashbord__bottom ul li .dashbord__bottom__link:hover {
+    color: red;
+    background: #f7f9fa;
+}
+
+.dashbord__bottom ul li:last-child .dashbord__bottom__link {    
+    border-bottom: none;  
+}
+
