@@ -24,4 +24,12 @@ $(function() {
     })
 
     $(window).resize();
+
+    
+    // isotope
+
+    $('.grid').isotope({
+        // options
+        itemSelector: '.grid-item',          
+    });
 })
