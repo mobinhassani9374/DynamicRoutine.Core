@@ -18,9 +18,14 @@
     <link rel="stylesheet" href="~/assets/fonts/pe-icon-7-stroke/css/helper.css" />
 
     <link rel="stylesheet" href="~/assets/angularjs/loading-bar/loading-bar.css" />
+
+    <link href="~/assets/angularjs/toaster/toaster.css" rel="stylesheet" />
+    
+    <link href="~/assets/angularjs/sweetAlert/sweetalert.css" rel="stylesheet" />
 </head>
 <body ng-app="myApp" ng-controller="myController" ng-cloak>
     <div ng-controller="loadingBar"></div>
+    <toaster-container toaster-options="{'time-out': 6000}"></toaster-container>
     <header class="header">
         <div class="header__logo">
             پنل ادمین روتین ساز 
@@ -51,6 +56,15 @@
 
     <script src="~/assets/angularjs/angular.min.js"></script>
     <script src="~/assets/angularjs/loading-bar/loading-bar.js"></script>
+
+    <script src="~/assets/angularjs/toaster/toaster.js"></script>
+
+
+
+    <script src="~/assets/angularjs/sweetAlert/ngSweetAlert.js"></script>
+    <script src="~/assets/angularjs/sweetAlert/sweetalert.min.js"></script>
+  
+
     <script src="~/assets/angularjs/app.js"></script>
     <script src="~/assets/angularjs/controllers/myController.js"></script>
     <script src="~/assets/angularjs/services/myService.js"></script>
