@@ -12,5 +12,13 @@ namespace DynamicRoutine.Core.Controllers
         {
             return View();
         }
+        public IActionResult Kartable()
+        {
+            return View();
+        }
+        public IActionResult Routin()
+        {
+            return View();
+        }
     }
 }
