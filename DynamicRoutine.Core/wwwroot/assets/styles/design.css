@@ -59,7 +59,7 @@ body {
 }
 @media (max-width:767px) {
     .header__link {     
-        padding: 13px 8px;   
+         padding: 13px 8px;   
     }
 }
 .header__link:hover {
@@ -180,3 +180,34 @@ body.page-small  .menu {
     font-size: 15px;
 }
 
+.login {
+    height: 100vh;
+    position: relative;
+    background-image: url(../images/login-bg.jpg);
+    background-size: cover;
+}
+
+.login:after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute; 
+    top: 0;
+    right: 0;
+    background-color: #222;
+    opacity: 0.6;   
+}
+
+#loading-bar .bar {
+    background: red !important;
+    height: 3px !important;
+}
+    
+#loading-bar-spinner .spinner-icon {
+     width: 18px;
+     height: 18px;
+     border: solid 2px transparent !important;
+     border-top-color: red !important;
+     border-left-color: red !important;
+     border-radius: 10px;
+}
