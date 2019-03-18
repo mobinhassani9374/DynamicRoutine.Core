@@ -30,6 +30,7 @@ $(function() {
 
     $('.grid').isotope({
         // options
-        itemSelector: '.grid-item',          
+        itemSelector: '.grid-item', 
+        isOriginLeft: false,               
     });
 })
