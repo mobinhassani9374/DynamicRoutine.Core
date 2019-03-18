@@ -14,7 +14,7 @@ namespace DynamicRoutine.Core.Data
     {
         public AppDbContext(DbContextOptions options) : base(options)
         {
-            this.Users.Where()
+            
         }
 
         public DbSet<User> Users { get; set; }

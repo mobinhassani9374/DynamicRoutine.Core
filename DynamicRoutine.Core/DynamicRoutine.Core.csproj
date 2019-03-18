@@ -10,4 +10,10 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DynamicRoutine.Core.Data\DynamicRoutine.Core.Data.csproj" />
+    <ProjectReference Include="..\DynamicRoutine.Core.Domain\DynamicRoutine.Core.Domain.csproj" />
+    <ProjectReference Include="..\DynamicRoutine.Core.Utility\DynamicRoutine.Core.Utility.csproj" />
+  </ItemGroup>
+
 </Project>
