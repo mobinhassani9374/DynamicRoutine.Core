@@ -1,5 +1,5 @@
 $(function() {
-    
+
     new WOW().init();
 
     $('.header__hide-sidebar').on('click',function(){
@@ -10,8 +10,8 @@ $(function() {
         }
         else {
             $('body').addClass('hide-sidebar');
-            $('.menu').css('margin-right','-200px')
-            $('.main').css('margin-right','0px')
+            $('.menu').css('margin-right','-200px');
+            $('.main').css('margin-right','0px');
         }
     })
 

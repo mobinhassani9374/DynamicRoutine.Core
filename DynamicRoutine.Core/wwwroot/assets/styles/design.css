@@ -1,5 +1,6 @@
 body {
     background: #f1f1f1 !important;
+    height: auto;
 }
 
 .header {
@@ -58,7 +59,7 @@ body {
 }
 @media (max-width:767px) {
     .header__link {     
-        padding: 13px 9px;   
+        padding: 13px 8px;   
     }
 }
 .header__link:hover {
